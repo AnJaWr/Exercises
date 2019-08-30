@@ -1,0 +1,259 @@
+/* fonts*/
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
+
+/* colors */
+$backgroundcolor: white;
+$basecolor: black;
+$backgroundcolor_grey:rgb(226, 232, 232);
+$backgroundcolor_seledine:rgb(179, 211, 211);
+$mainfont: 'Lato',
+sans-serif;
+$pageTitle: 'Abril Fatface',
+cursive;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  background-image: url(/img/topsq.gif);
+  background-position: right top;
+  background-repeat: no-repeat;
+  color: black;
+  font-family: $mainfont;
+}
+
+/* main navbar */
+.navbar {
+  display: flex;
+  padding: 16px;
+  font-family: $mainfont;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar__link-brand {
+  font-family: $pageTitle;
+  font-size: 40px;
+  flex-grow: 2;
+  text-align: center;
+}
+
+.navbar__link {
+  padding-right: 16px;
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $basecolor;
+
+    &:hover {
+      color: gray;
+      transition: 0.7s;
+    }
+  }
+}
+
+.navbar__items {
+  display: flex;
+}
+
+.navbar__items--right {
+  margin-left: auto;
+}
+
+/* ================= header=================*/
+.header__container {
+  display: flex;
+
+
+  .header__left {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .header__socialmedia {
+      display: flex;
+      flex-direction: column;
+      justify-items: flex-start;
+      margin-bottom: 50px;
+
+      ul {
+        list-style: none;
+
+        .fab {
+          color: $basecolor;
+          font-size: 16px;
+          padding: 20px;
+          transition: 0.7s;
+
+          &.fab:hover {
+            color: $backgroundcolor_seledine;
+          }
+        }
+      }
+    }
+
+    .header__horizontal {
+      transform: rotate(270deg);
+      display: flex;
+
+
+      h3 {
+        letter-spacing: 3px;
+      }
+
+      hr {
+        border: 0;
+        border-top: 2px solid black;
+        width: 100px;
+      }
+
+      .header__line {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+
+  }
+
+  .header__center {
+    display: flex;
+    position: relative;
+    margin-left: 10%;
+
+    .header__slider {
+      width: 700px;
+      height: 467px;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      .header__title {
+        width: 400px;
+        height: 200px;
+        background: rgb(179, 211, 211);
+        position: relative;
+        top: 200px;
+        left: -50px;
+        font-size: 35px;
+
+        h1,
+        h5 {
+          padding-left: 20px;
+        }
+
+        h5 {
+          font-size: 20px;
+        }
+      }
+
+    }
+  }
+
+  .header__right {
+    display: flex;
+    margin-left: 20px;
+    align-items: flex-end;
+
+    ul {
+      list-style: none;
+
+
+      .header__navlink {
+        padding-bottom: 15px;
+        color: grey;
+        transition: 0.7s;
+
+        &.active {
+          color: black;
+
+          hr {
+
+
+
+            opacity: 1;
+
+          }
+        }
+
+
+        hr {
+          width: 50px;
+          margin-left: 30px;
+          border-bottom: 2px solid black;
+          display: inline-block;
+          opacity: 0;
+          transition: 0.3s;
+
+        }
+      }
+
+    }
+
+  }
+}
+
+/* media queries*/
+@media only screen and (max-width: 768px) {
+
+  .navbar__items,
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__items {
+    display: none;
+  }
+
+  .navbar__link-brand {
+    font-size: 35px;
+  }
+
+  .navbar__items--right {
+    margin-top: 0;
+    padding-bottom: 10px;
+    position: absolute;
+    right: 1%;
+    top: 3%;
+    //  width: 79px;
+  }
+
+  .navbar__toggleShow {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 20px;
+    background: $backgroundcolor_seledine;
+
+    .navbar__link {
+      padding-top: 10px;
+
+      &:last-child {
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .navbar__link-brand {
+    display: inline-block;
+    position: absolute;
+    top: 1%;
+    left: 23%;
+  }
+
+  .navbar__link-toggle {
+    align-self: flex-start;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+}
