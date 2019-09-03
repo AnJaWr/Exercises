@@ -11,7 +11,7 @@
 
 body {
   background: white;
-  background-image: url("img/topsq.gif");
+  background-image: url("/img/topsq.gif");
   background-position: right top;
   background-repeat: no-repeat;
   color: black;
