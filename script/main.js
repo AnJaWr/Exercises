@@ -60,4 +60,18 @@ $(document).ready(function () {
         });
     })
 
+    /* animated menu */
+
+    $(window).on('load resize', function () {
+        var $thisnav = $('.current-menu-item').offset().left;
+
+        $('.menu-item').hover(function () {
+            var $left = $(this).offset().left - $thisnav;
+            var $width = $(this).outerWidth();
+            $('.menu-item--first').css({ 'left': $left, 'width': $width });
+        }, function () {
+            var $initwidth = $('.current-menu-item').width();
+            $('.menu-item--first').css({ 'left': '0', 'width': $initwidth });
+        });
+    });
 });
