@@ -1,0 +1,56 @@
+{
+    "person": [
+        {
+            "_id": "01",
+            "profession": "musician",
+            "picture": "img/people/m1.jpg",
+           "name": "Scott Orson"
+        },
+        {
+            "_id": "02",
+            "profession": "actress",
+            "picture": "img/people/w1.jpg",
+            "name": "Olivia Poof"
+        },
+        {
+            "_id": "03",
+            "profession": "comedian",
+            "picture": "img/people/m2.jpg",
+            "name": "Lukas Kozlovsky"
+        },
+        {
+            "_id": "04",
+            "profession": "actor",
+            "picture": "img/people/m3.jpg",
+            "name": "Peter Scott"
+        },
+        {
+            "_id": "05",
+            "profession": "comedian",
+            "picture": "img/people/w2.jpg",
+            "name": "Lucy Firley"
+        },
+        {
+            "_id": "06",
+            "profession": "musician",
+            "picture": "img/people/w3.jpg",
+            "name": "Ann Ford"
+        },
+        {
+            "_id": "07",
+            "profession": "actress",
+            "picture": "img/people/w4.jpg",
+            "name": "Mercedes Benz"
+        }
+        ,
+        {
+            "_id": "08",
+            "profession": "musician",
+            "picture": "img/people/m4.jpg",
+            "name": "Ted Attkins"
+        }
+
+        
+       
+    ]
+}

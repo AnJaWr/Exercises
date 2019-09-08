@@ -74,4 +74,26 @@ $(document).ready(function () {
             $('.menu-item--first').css({ 'left': '0', 'width': $initwidth });
         });
     });
+
+
+    /*  gallery */
+
+    $.getJSON('data.json', function (data) {
+        const gallery = data;
+        console.log(gallery)
+
+        var i, x = "";
+        for (i in gallery.person) {
+            x += '<div class="gallery__item">';
+            x += '<img src="' + gallery.person[i].picture + '" alt="' + gallery.person[i].name + '" class="gallery__image">';
+            x += '<div class="gallery__overlay">';
+            x += '<div class="gallery__arrow"><i class="fas fa-arrow-circle-up"></i></div>'
+            x += '<div class="gallery__text"> <h3>' + gallery.person[i].name + '</h3> <h5>' + gallery.person[i].profession + '</h5></div>';
+            x += '</div>'
+            x += '</div>';
+        }
+
+        $('.gallery').html(x);
+    });
 });
+
