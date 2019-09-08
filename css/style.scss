@@ -417,9 +417,13 @@ body {
     cursor: pointer;
   }
 
-  // .gallery__item {
-  //   width: 35%;
-  //   font-size: 12px;
+  .gallery__item {
+    width: 35%;
 
-  // }
+
+  }
+
+  .gallery__text {
+    font-size: 1rem
+  }
 }

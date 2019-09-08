@@ -423,5 +423,11 @@ body {
     position: absolute;
     cursor: pointer;
   }
+  .gallery__item {
+    width: 35%;
+  }
+  .gallery__text {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
