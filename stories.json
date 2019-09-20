@@ -1,0 +1,60 @@
+{
+    "article": [
+        {
+            "id": "100",
+            "author": "Therese april",
+            "picture": "img/people/stories/img7.jpg",
+            "title": "100 very important and famous books you should know",
+            "url": "doc/articles/1234.html",
+            "date": "22 April, 2020"
+        },
+        {
+            "id": "101",
+            "author": "Wirginia Woolf",
+            "picture": "img/people/stories/img1.jpg",
+            "title": "Make your cat happy and purring",
+            "url": "doc/articles/2345.html",
+            "date": "29 April, 2020"
+        },
+        {
+            "id": "102",
+            "author": "Arthur Doyle",
+            "picture": "img/people/stories/img5.jpg",
+            "title": "How to get rid of the corpse. Practical exercises for rookies ",
+            "url": "doc/articles/3456.html",
+            "date": "03 May, 2020"
+        },
+        {
+            "id": "103",
+            "author": "James Corey",
+            "picture": "img/people/stories/img3.jpg",
+            "title": "Exploration of external planet deposits",
+            "url": "doc/articles/4567.html",
+            "date": "10 May, 2020"
+        },
+        {
+            "id": "104",
+            "author": "Geroge Martin",
+            "picture": "img/people/stories/img6.jpg",
+            "title": "Those we love",
+            "url": "doc/articles/5678.html",
+            "date": "22 May, 2020"
+        },
+        {
+            "id": "105",
+            "author": "May May",
+            "picture": "img/people/stories/img2.jpg",
+            "title": "A thousand tasty potato dishes",
+            "url": "doc/articles/6789.html",
+            "date": "02 June, 2020"
+        },
+        {
+            "id": "106",
+            "author": "Ken Katki",
+            "picture": "img/people/stories/img4.jpg",
+            "title": "As smooth as an infant's feet.",
+            "url": "doc/articles/9123.html",
+            "date": "12 June, 2020"
+        }
+    ]
+}

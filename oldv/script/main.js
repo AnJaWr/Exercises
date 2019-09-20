@@ -108,16 +108,14 @@ $(document).ready(function () {
         var headerLeft = "";
 
         // for (i in stories.article) {
-
         headerLeft += '<div class="stories__img">';
         headerLeft += '<img src="' + stories.article[0].picture + '" alt="' + stories.article[0].author + '">'
         headerLeft += '</div>';
         headerLeft += '<div class="stories__title">';
-        headerLeft += '<div class="title"><h3>' + stories.article[0].title + '</h3></div>';
-        headerLeft += '<div class="date">' + stories.article[0].date + '</div>';
+        headerLeft += '<h3>' + stories.article[0].title + '</h3>' + '<h5>' + stories.article[0].date + '</h5></div>';
         // }
 
-        $('.stories_header-left').append(headerLeft);
+        $('.stories_header-left').html(headerLeft);
 
         var headerCenter = "";
 
@@ -126,68 +124,23 @@ $(document).ready(function () {
         headerCenter += '<img src="' + stories.article[1].picture + '" alt="' + stories.article[1].author + '">'
         headerCenter += '</div>';
         headerCenter += '<div class="stories__title">';
-        headerCenter += '<div class="title"><h3>' + stories.article[1].title + '</h3></div>';
-        headerCenter += '<div class="date">' + stories.article[1].date + '</div>';
+        headerCenter += '<h3>' + stories.article[1].title + '</h3>' + '<h5>' + stories.article[1].date + '</h5></div>';
+        // }
 
-        $('.stories_header-center').append(headerCenter);
+        $('.stories_header-center').html(headerCenter);
 
 
         var headerRight = "";
+
+        // for (i in stories.article) {
         headerRight += '<div class="stories__img">';
         headerRight += '<img src="' + stories.article[2].picture + '" alt="' + stories.article[2].author + '">'
         headerRight += '</div>';
         headerRight += '<div class="stories__title">';
+        headerRight += '<h3>' + stories.article[2].title + '</h3>' + '<h5>' + stories.article[2].date + '</h5></div>';
+        // }
 
-        headerRight += '<div class="title"><h3>' + stories.article[2].title + '</h3></div>';
-        headerRight += '<div class="date">' + stories.article[2].date + '</div>';
-
-        $('.stories_header-right').append(headerRight);
-
-        var leftUpper = "";
-        leftUpper += '<div class="stories__title--upleft">';
-        leftUpper += '<h3>' + stories.article[3].title + '</h3>'; leftUpper += '<h5>' + stories.article[3].date + '</h5>';
-        leftUpper += '</div>';
-        leftUpper += '<div class="stories__img">';
-        leftUpper += '<img src="' + stories.article[3].picture + '" alt="' + stories.article[3].author + '">'
-        leftUpper += '</div>';
-        $('.stories__left-upper').append(leftUpper);
-
-        var leftLow = "";
-
-        leftLow += '<div class="stories__img"';
-        leftLow += 'style="background:url(' + stories.article[4].picture + ') " alt="' + stories.article[4].author + '">'
-        leftLow += '</div>';
-        leftLow += '<div class="stories__title">';
-        leftLow += '<div class="title"><h3>' + stories.article[4].title + '</h3></div>';
-        leftLow += '<div class="date">' + stories.article[4].date + '</div>';
-
-        $('.stories__left-lower.left').append(leftLow);
-        $('.stories__left-lower.left .stories__img').css({
-            "background-size": "contain",
-            "margin-top": "10px"
-        })
-
-        var rightLow = "";
-
-        rightLow += '<div class="stories__img">';
-        rightLow += '<img src="' + stories.article[5].picture + '" alt="' + stories.article[5].author + '">'
-        rightLow += '</div>';
-
-
-        $('.stories__left-lower.right').append(rightLow);
-
-
-        var right = "";
-        right += '<div class="stories__img">';
-        right += '<img src="' + stories.article[6].picture + '" alt="' + stories.article[2].author + '">'
-        right += '</div>';
-        right += '<div class="stories__title">';
-
-        right += '<div class="title"><h3>' + stories.article[6].title + '</h3></div>';
-        right += '<div class="date">' + stories.article[6].date + '</div>';
-
-        $('.stories__right').append(right);
-
+        $('.stories_header-right').html(headerRight);
     });
 
 
