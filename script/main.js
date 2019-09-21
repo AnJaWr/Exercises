@@ -106,11 +106,12 @@ $(document).ready(function () {
         console.log(stories)
 
         var headerLeft = "";
+        headerLeft += '<div class="stories__img"';
+        headerLeft += 'style="background:url(' + stories.article[0].picture + ');background-size:cover">';
 
-        // for (i in stories.article) {
-
-        headerLeft += '<div class="stories__img">';
-        headerLeft += '<img src="' + stories.article[0].picture + '" alt="' + stories.article[0].author + '">'
+        headerLeft += '<div class="stories__overlay">';
+        headerLeft += '<div class="stories__arrow"><i class="fas fas fa-play"></i></div>';
+        headerLeft += '</div>';
         headerLeft += '</div>';
         headerLeft += '<div class="stories__title">';
         headerLeft += '<div class="title"><h3>' + stories.article[0].title + '</h3></div>';
@@ -120,10 +121,11 @@ $(document).ready(function () {
         $('.stories_header-left').append(headerLeft);
 
         var headerCenter = "";
-
-        // for (i in stories.article) {
-        headerCenter += '<div class="stories__img">';
-        headerCenter += '<img src="' + stories.article[1].picture + '" alt="' + stories.article[1].author + '">'
+        headerCenter += '<div class="stories__img" ';
+        headerCenter += 'style="background:url(' + stories.article[1].picture + ');background-size:cover">';
+        headerCenter += '<div class="stories__overlay">';
+        headerCenter += '<div class="stories__arrow"><i class="fas fa-play"></i></div>';
+        headerCenter += '</div>';
         headerCenter += '</div>';
         headerCenter += '<div class="stories__title">';
         headerCenter += '<div class="title"><h3>' + stories.article[1].title + '</h3></div>';
@@ -131,13 +133,14 @@ $(document).ready(function () {
 
         $('.stories_header-center').append(headerCenter);
 
-
         var headerRight = "";
-        headerRight += '<div class="stories__img">';
-        headerRight += '<img src="' + stories.article[2].picture + '" alt="' + stories.article[2].author + '">'
+        headerRight += '<div class="stories__img" ';
+        headerRight += 'style="background:url(' + stories.article[2].picture + ');background-size:cover">';
+        headerRight += '<div class="stories__overlay">';
+        headerRight += '<div class="stories__arrow"><i class="fas fas fa-play"></i></div>';
+        headerRight += '</div>';
         headerRight += '</div>';
         headerRight += '<div class="stories__title">';
-
         headerRight += '<div class="title"><h3>' + stories.article[2].title + '</h3></div>';
         headerRight += '<div class="date">' + stories.article[2].date + '</div>';
 
@@ -145,12 +148,15 @@ $(document).ready(function () {
 
         var leftUpper = "";
         leftUpper += '<div class="stories__title--upleft">';
-        leftUpper += '<h3>' + stories.article[3].title + '</h3>'; leftUpper += '<h5>' + stories.article[3].date + '</h5>';
+        leftUpper += '<i class="fas fa-play"></i>'
+        leftUpper += '<h3>' + stories.article[3].title + '</h3>';
+        leftUpper += '<h5>' + stories.article[3].date + '</h5>';
         leftUpper += '</div>';
-        leftUpper += '<div class="stories__img">';
-        leftUpper += '<img src="' + stories.article[3].picture + '" alt="' + stories.article[3].author + '">'
+        leftUpper += '<div class="stories__img"';
+        leftUpper += 'style="background: url(' + stories.article[3].picture + ')">';
         leftUpper += '</div>';
         $('.stories__left-upper').append(leftUpper);
+        $('.stories__img').css({ "background-size": "cover", "background-repeat": "no-repeat" });
 
         var leftLow = "";
 
@@ -161,21 +167,24 @@ $(document).ready(function () {
         leftLow += '<div class="title"><h3>' + stories.article[4].title + '</h3></div>';
         leftLow += '<div class="date">' + stories.article[4].date + '</div>';
 
-        $('.stories__left-lower.left').append(leftLow);
+        $('.left').append(leftLow);
         $('.stories__left-lower.left .stories__img').css({
-            "background-size": "contain",
-            "margin-top": "10px"
+            "background-size": "cover",
+            "margin-top": "10px",
+            "background-repeat": "no-repeat",
         })
 
         var rightLow = "";
 
-        rightLow += '<div class="stories__img">';
-        rightLow += '<img src="' + stories.article[5].picture + '" alt="' + stories.article[5].author + '">'
+        rightLow += '<div class="stories__img"';
+        rightLow += 'style="background:url(' + stories.article[5].picture + ')">';
         rightLow += '</div>';
 
-
-        $('.stories__left-lower.right').append(rightLow);
-
+        $('.right').append(rightLow);
+        $('.stories__img').css({
+            "background-size": "cover",
+            "background-repeat": "no-repeat"
+        })
 
         var right = "";
         right += '<div class="stories__img">';
@@ -185,6 +194,7 @@ $(document).ready(function () {
 
         right += '<div class="title"><h3>' + stories.article[6].title + '</h3></div>';
         right += '<div class="date">' + stories.article[6].date + '</div>';
+        right += '</div>';
 
         $('.stories__right').append(right);
 
